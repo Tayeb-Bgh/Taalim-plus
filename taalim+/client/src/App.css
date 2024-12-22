@@ -1,0 +1,15 @@
+.App{
+  width: 100vw;
+  overflow-x: hidden;
+}
+.sidebarLeft{
+  float: left;
+  width: 20vw;
+  position: fixed;
+}
+
+.main{
+  float: right;
+  width: 80vw;
+  
+}

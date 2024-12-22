@@ -1,0 +1,13 @@
+body {
+    overflow-x: hidden;
+}
+
+btn-style{
+    padding: 10px 20px;
+  background-color:  #556e88;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}

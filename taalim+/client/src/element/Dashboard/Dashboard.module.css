@@ -1,0 +1,288 @@
+.dashboard {
+  height: 100vh;
+  padding: 20px;
+  padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ECF0F1;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.headerTitle{
+  margin-bottom: 1px; 
+  font-size: 32px;
+  color: #34495E;
+  font-weight: 600;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.chartSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.chartCard {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+ .chartCard .graphe{
+  margin-left: -30px;
+  margin-top: 7px;
+ }
+.chartCard {
+    overflow: auto;
+}
+
+.chartCard::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chartCard::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.chartCard::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.paymentsCard {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.paymentsListContainer {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  margin: 0.5rem 0;
+}
+
+.paymentsList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.paymentsList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.paymentsList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.paymentsList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.paymentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.paymentItem:last-child {
+  border-bottom: none;
+}
+
+.paymentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.studentName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.sessionsCount {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.paymentAmount {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.paymentsTotal {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.sessionsCard {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sessionsList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+  padding-right: 4px; /* Ajout d'un padding à droite pour éviter que le contenu ne touche la barre de défilement */
+}
+
+.sessionsList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sessionsList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.sessionsList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.sessionsList::before,
+.sessionsList::after {
+  content: '';
+  height: 1px; /* Espace minimal en haut et en bas */
+}
+
+.sessionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  background-color: #f6f6f7;
+  transition: background-color 0.2s, border-color 0.2s;
+  border: 1px solid transparent;
+}
+
+.sessionInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.sessionTime {
+  font-weight: 500;
+  color: #111827;
+}
+
+.sessionsTotal {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sessionGroup {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.sessionPayment {
+  font-weight: 500;
+  color: #111827;
+}
+             
+.sessionsTotal {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  margin-top: auto;
+  border-top: 1px solid #e5e7eb;
+  font-weight: 500;
+}
+
+.attendanceCard {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 40%;
+}
+
+.attendanceContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 2rem);
+}
+
+.attendanceRate {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.attendanceTrend {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: #1A2B48;
+    height: 100vh;
+    padding: 20px;
+    font-family: sans-serif;
+
+    backdrop-filter: blur(10px);
+    /* Effet de verre */
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 3px solid white;
+    border-radius: 1px;
+    padding-right: 13px;
+    padding-bottom: 11px;
+    margin-bottom: 20px;
+
+}
+
+.logo .pngLogo{
+   padding-top: 0%;
+   margin-top: 0px;
+}
+
+.logo h1 {
+    
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    color: #243C5A;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    background-color: #34495E;
+    border-radius: 8px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #ECF0F1;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover a {
+    color: #ffffffda;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.dashboard-icon::before {
+    background-image: url('./assets/dashboard.png');
+}
+
+.assets-icon::before {
+    background-image: url('./assets/utilisateur.png');
+}
+
+.booking-icon::before {
+    background-image: url('./assets/groupe.png');
+}
+
+.seance-icon::before {
+    background-image: url('./assets/seance.png');
+}
+
+.paiement-icon::before {
+    background-image: url('./assets/payment.png');
+}
+
+.dashboard-icon::before,
+.assets-icon::before,
+.booking-icon::before {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    /* Ajuste l'image sans la déformer */
+    width: 20px;
+    /* La largeur souhaitée */
+    height: 20px;
+    /* La hauteur souhaitée */
+    background-repeat: no-repeat;
+}
+
+.seance-icon::before,
+.paiement-icon::before {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    /* Ajuste l'image sans la déformer */
+    width: 24px;
+    /* La largeur souhaitée */
+    height: 24px;
+    /* La hauteur souhaitée */
+    background-repeat: no-repeat;
+}
